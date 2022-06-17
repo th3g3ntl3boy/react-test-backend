@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "algoritmas",
+  "info": {
+    "singularName": "algoritma",
+    "pluralName": "algoritmas",
+    "displayName": "ALGORITMA",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "richtext",
+      "required": true
+    },
+    "ilustrasi": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "kategoris": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::kategori.kategori",
+      "inversedBy": "algoritmases"
+    },
+    "ordo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ordo.ordo",
+      "inversedBy": "algoritm"
+    },
+    "like": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
+    },
+    "dislike": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
+    },
+    "smile": {
+      "min": 0,
+      "type": "integer",
+      "default": 0
+    },
+    "sad": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
+    },
+    "nah": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
+    },
+    "views": {
+      "type": "biginteger",
+      "min": "0",
+      "default": "0"
+    },
+    "logs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::log.log",
+      "mappedBy": "algoritmas"
+    }
+  }
+}
