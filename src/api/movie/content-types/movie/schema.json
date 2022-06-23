@@ -33,7 +33,8 @@
         "Romance",
         "Horor",
         "Sci-Fi",
-        "Conscpiracy"
+        "Conscpiracy",
+        "Adventure"
       ],
       "required": true
     },
