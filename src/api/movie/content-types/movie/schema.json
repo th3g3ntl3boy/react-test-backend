@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "singularName": "movie",
+    "pluralName": "movies",
+    "displayName": "MOVIE"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "release_date": {
+      "type": "date",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Action",
+        "Comedy",
+        "School",
+        "Romance",
+        "Horor",
+        "Sci-Fi"
+      ],
+      "required": true
+    },
+    "Region": {
+      "type": "enumeration",
+      "enum": [
+        "ID",
+        "NOTID"
+      ],
+      "required": true
+    },
+    "thumb": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ytlink": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

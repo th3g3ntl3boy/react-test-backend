@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ratings",
+  "info": {
+    "singularName": "rating",
+    "pluralName": "ratings",
+    "displayName": "RATING"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "star": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "max": 5
+    }
+  }
+}
