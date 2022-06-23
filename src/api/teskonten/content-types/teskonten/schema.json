@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teskontens",
+  "info": {
+    "singularName": "teskonten",
+    "pluralName": "teskontens",
+    "displayName": "teskonten"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "coba": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
