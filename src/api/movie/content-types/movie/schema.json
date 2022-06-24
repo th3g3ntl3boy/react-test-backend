@@ -62,6 +62,10 @@
       "type": "integer",
       "default": 0,
       "min": 0
+    },
+    "linkgambar": {
+      "type": "text",
+      "required": true
     }
   }
 }
