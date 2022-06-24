@@ -57,6 +57,11 @@
     "ytlink": {
       "type": "string",
       "required": true
+    },
+    "view": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
     }
   }
 }
