@@ -46,14 +46,6 @@
       ],
       "required": true
     },
-    "thumb": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "ytlink": {
       "type": "string",
       "required": true
