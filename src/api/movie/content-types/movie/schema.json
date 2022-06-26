@@ -58,6 +58,30 @@
     "linkgambar": {
       "type": "text",
       "required": true
+    },
+    "ratings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rating.rating",
+      "mappedBy": "movie"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "movie"
+    },
+    "bookmark": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bookmark.bookmark",
+      "inversedBy": "movies"
+    },
+    "histories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::history.history",
+      "mappedBy": "movie"
     }
   }
 }

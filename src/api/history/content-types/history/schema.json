@@ -12,15 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "movies": {
+    "movie": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::movie.movie"
+      "relation": "manyToOne",
+      "target": "api::movie.movie",
+      "inversedBy": "histories"
     },
-    "users_permissions_users": {
+    "users_permissions_user": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "plugin::users-permissions.user"
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "histories"
     }
   }
 }

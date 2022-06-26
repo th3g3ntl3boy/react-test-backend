@@ -69,6 +69,30 @@
         "Man",
         "Woman"
       ]
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "users_permissions_user"
+    },
+    "bookmarks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bookmark.bookmark",
+      "mappedBy": "users_permissions_user"
+    },
+    "histories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::history.history",
+      "mappedBy": "users_permissions_user"
+    },
+    "rating": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::rating.rating",
+      "inversedBy": "users_permissions_users"
     }
   }
 }
