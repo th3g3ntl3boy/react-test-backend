@@ -13,11 +13,14 @@
   "pluginOptions": {},
   "attributes": {
     "comment": {
-      "type": "text"
+      "type": "text",
+      "unique": true,
+      "minLength": 1
     },
     "likes": {
       "default": 0,
-      "type": "integer"
+      "type": "integer",
+      "unique": true
     },
     "users_permissions_users": {
       "type": "relation",
