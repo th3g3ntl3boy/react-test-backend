@@ -18,11 +18,11 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "bookmarks"
     },
-    "movies": {
+    "movie": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::movie.movie",
-      "mappedBy": "bookmark"
+      "inversedBy": "bookmarks"
     }
   }
 }
