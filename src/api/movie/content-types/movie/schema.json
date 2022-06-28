@@ -24,23 +24,6 @@
       "type": "date",
       "required": true
     },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "Action",
-        "Comedy",
-        "School",
-        "Romance",
-        "Horor",
-        "Sci-Fi",
-        "Conscpiracy",
-        "Adventure",
-        "Drama",
-        "Historical",
-        "Musical"
-      ],
-      "required": true
-    },
     "Region": {
       "type": "enumeration",
       "enum": [
