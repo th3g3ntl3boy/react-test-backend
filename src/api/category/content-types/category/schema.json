@@ -4,13 +4,20 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "CATEGORY"
+    "displayName": "CATEGORY",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
+    "movies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::movie.movie",
+      "inversedBy": "categories"
+    },
     "category": {
       "type": "enumeration",
       "enum": [
@@ -22,15 +29,9 @@
         "Comedy",
         "Conscpiracy",
         "Drama",
-        "Historical"
-      ],
-      "required": false
-    },
-    "movies": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::movie.movie",
-      "inversedBy": "categories"
+        "Historical",
+        "Horror"
+      ]
     }
   }
 }
