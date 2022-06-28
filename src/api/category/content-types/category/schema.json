@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "CATEGORY"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Action",
+        "Romance",
+        "School",
+        "Fantasy",
+        "Musical",
+        "Comedy",
+        "Conscpiracy",
+        "Drama",
+        "Historical"
+      ],
+      "required": false
+    },
+    "movies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::movie.movie",
+      "inversedBy": "categories"
+    }
+  }
+}

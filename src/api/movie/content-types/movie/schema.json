@@ -85,6 +85,12 @@
       "relation": "oneToMany",
       "target": "api::bookmark.bookmark",
       "mappedBy": "movie"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "movies"
     }
   }
 }
