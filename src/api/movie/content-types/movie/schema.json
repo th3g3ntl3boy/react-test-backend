@@ -34,7 +34,10 @@
         "Horor",
         "Sci-Fi",
         "Conscpiracy",
-        "Adventure"
+        "Adventure",
+        "Drama",
+        "Historical",
+        "Musical"
       ],
       "required": true
     },
