@@ -93,6 +93,12 @@
       "relation": "oneToMany",
       "target": "api::rating.rating",
       "mappedBy": "users_permissions_user"
+    },
+    "commentlikes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::commentlike.commentlike",
+      "mappedBy": "users_permissions_user"
     }
   }
 }

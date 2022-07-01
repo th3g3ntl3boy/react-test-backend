@@ -33,6 +33,12 @@
       "relation": "manyToOne",
       "target": "api::movie.movie",
       "inversedBy": "comments"
+    },
+    "commentlikes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::commentlike.commentlike",
+      "mappedBy": "comment"
     }
   }
 }
